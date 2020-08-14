@@ -1,0 +1,22 @@
+{
+  "name": "UPLogs",
+  "version": "0.1.0",
+  "summary": "A short description of UPLogs.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/erbittuu/UPLogs",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "erbittuu": "utsav.patel@solutionanalysts.com"
+  },
+  "source": {
+    "git": "https://github.com/erbittuu/UPLogs.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UPLogs/Classes/**/*"
+}

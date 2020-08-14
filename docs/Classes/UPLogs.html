@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UPLogs Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/UPLogs" class="dashAnchor"></a>
+    <a title="UPLogs Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">UPLogs 0.1.0 Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">UPLogs Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UPLogs Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Formatter.html">Formatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Formatters.html">Formatters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UPLogs.html">UPLogs</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Component.html">Component</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Level.html">Level</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UPLogs</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UPLogs</span></code></pre>
+
+                </div>
+              </div>
+            <p>logger main responsible class</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">simpleLog</span> <span class="o">=</span> <span class="kt">UPLogs</span><span class="p">()</span> <span class="c1">// Or</span>
+<span class="k">let</span> <span class="nv">detailedLogs</span> <span class="o">=</span> <span class="kt">UPLogs</span><span class="p">(</span><span class="nv">formatter</span><span class="p">:</span> <span class="o">.</span><span class="n">detailed</span><span class="p">)</span>
+<span class="n">simpleLog</span><span class="o">.</span><span class="nf">trace</span><span class="p">(</span><span class="s">"trace logs"</span><span class="p">)</span>
+<span class="n">simpleLog</span><span class="o">.</span><span class="nf">debug</span><span class="p">(</span><span class="s">"Who is self:"</span><span class="p">,</span> <span class="k">self</span><span class="p">)</span>
+<span class="n">simpleLog</span><span class="o">.</span><span class="nf">info</span><span class="p">(</span><span class="s">"some"</span><span class="p">,</span> <span class="s">"objects"</span><span class="p">,</span> <span class="s">"here"</span><span class="p">)</span>
+<span class="n">simpleLog</span><span class="o">.</span><span class="nf">warning</span><span class="p">(</span><span class="s">"one"</span><span class="p">,</span> <span class="s">"two"</span><span class="p">,</span> <span class="s">"three"</span><span class="p">,</span> <span class="nv">separator</span><span class="p">:</span> <span class="s">" - "</span><span class="p">)</span>
+<span class="n">simpleLog</span><span class="o">.</span><span class="nf">error</span><span class="p">(</span><span class="s">"error"</span><span class="p">,</span> <span class="nv">terminator</span><span class="p">:</span> <span class="s">"😱😱😱</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC7enabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/enabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC7enabledSbvp">enabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The uplogs state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC9formatterAA9FormatterCvp"></a>
+                    <a name="//apple_ref/swift/Property/formatter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC9formatterAA9FormatterCvp">formatter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The uplogs formatter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">formatter</span><span class="p">:</span> <span class="kt"><a href="../Classes/Formatter.html">Formatter</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC8minLevelAA0C0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/minLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC8minLevelAA0C0Ovp">minLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The minimum level of severity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">minLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/Level.html">Level</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC6formatSSvp"></a>
+                    <a name="//apple_ref/swift/Property/format" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC6formatSSvp">format</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The uplogs format.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">format</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC9formatter8minLevelAbA9FormatterC_AA0D0Otcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(formatter:minLevel:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC9formatter8minLevelAbA9FormatterC_AA0D0Otcfc">init(formatter:<wbr>minLevel:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns a new uplogs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">formatter</span><span class="p">:</span> <span class="kt"><a href="../Classes/Formatter.html">Formatter</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">,</span> <span class="nv">minLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/Level.html">Level</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">trace</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>formatter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The formatter.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>theme</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The theme.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>minLevel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The minimum level of severity.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A newly created uplogs.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC5trace_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF"></a>
+                    <a name="//apple_ref/swift/Method/trace(_:separator:terminator:file:line:column:function:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC5trace_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF">trace(_:<wbr>separator:<wbr>terminator:<wbr>file:<wbr>line:<wbr>column:<wbr>function:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs a message with a trace severity level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">trace</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt">Any</span><span class="o">...</span><span class="p">,</span> <span class="nv">separator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span> <span class="nv">terminator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">,</span> <span class="nv">column</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#column</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The items to log.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>separator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The separator between the items.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>terminator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The terminator of the log message.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The file in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>line</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The line at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>column</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The column at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>function</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The function in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC5debug_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF"></a>
+                    <a name="//apple_ref/swift/Method/debug(_:separator:terminator:file:line:column:function:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC5debug_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF">debug(_:<wbr>separator:<wbr>terminator:<wbr>file:<wbr>line:<wbr>column:<wbr>function:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs a message with a debug severity level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">debug</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt">Any</span><span class="o">...</span><span class="p">,</span> <span class="nv">separator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span> <span class="nv">terminator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">,</span> <span class="nv">column</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#column</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The items to log.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>separator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The separator between the items.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>terminator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The terminator of the log message.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The file in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>line</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The line at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>column</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The column at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>function</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The function in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC4info_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF"></a>
+                    <a name="//apple_ref/swift/Method/info(_:separator:terminator:file:line:column:function:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC4info_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF">info(_:<wbr>separator:<wbr>terminator:<wbr>file:<wbr>line:<wbr>column:<wbr>function:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs a message with an info severity level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">info</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt">Any</span><span class="o">...</span><span class="p">,</span> <span class="nv">separator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span> <span class="nv">terminator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">,</span> <span class="nv">column</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#column</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The items to log.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>separator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The separator between the items.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>terminator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The terminator of the log message.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The file in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>line</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The line at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>column</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The column at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>function</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The function in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC7warning_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF"></a>
+                    <a name="//apple_ref/swift/Method/warning(_:separator:terminator:file:line:column:function:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC7warning_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF">warning(_:<wbr>separator:<wbr>terminator:<wbr>file:<wbr>line:<wbr>column:<wbr>function:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs a message with a warning severity level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">warning</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt">Any</span><span class="o">...</span><span class="p">,</span> <span class="nv">separator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span> <span class="nv">terminator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">,</span> <span class="nv">column</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#column</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The items to log.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>separator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The separator between the items.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>terminator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The terminator of the log message.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The file in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>line</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The line at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>column</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The column at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>function</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The function in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogsAAC5error_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF"></a>
+                    <a name="//apple_ref/swift/Method/error(_:separator:terminator:file:line:column:function:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogsAAC5error_9separator10terminator4file4line6column8functionyypd_S3SS2iSStF">error(_:<wbr>separator:<wbr>terminator:<wbr>file:<wbr>line:<wbr>column:<wbr>function:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs a message with an error severity level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">error</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt">Any</span><span class="o">...</span><span class="p">,</span> <span class="nv">separator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span> <span class="nv">terminator</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">,</span> <span class="nv">column</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#column</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The items to log.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>separator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The separator between the items.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>terminator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The terminator of the log message.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The file in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>line</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The line at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>column</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The column at which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>function</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The function in which the log happens.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/erbittuu/UPLogs" target="_blank" rel="external">erbittuu</a>. All rights reserved. (Last updated: 2020-08-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

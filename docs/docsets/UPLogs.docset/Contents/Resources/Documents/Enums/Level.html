@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Level Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/Level" class="dashAnchor"></a>
+    <a title="Level Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">UPLogs 0.1.0 Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">UPLogs Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Level Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Formatter.html">Formatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Formatters.html">Formatters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UPLogs.html">UPLogs</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Component.html">Component</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Level.html">Level</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Level</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Level</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Level</span><span class="p">:</span> <span class="kt">Comparable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Level: Logging Levels</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogs5LevelO5traceyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/trace" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogs5LevelO5traceyA2CmF">trace</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Commonly used in development</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">trace</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogs5LevelO5debugyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/debug" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogs5LevelO5debugyA2CmF">debug</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Commonly used while debugging app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">debug</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogs5LevelO4infoyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/info" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogs5LevelO4infoyA2CmF">info</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Info purpose, Should not use in debug or error</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">info</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogs5LevelO7warningyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/warning" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogs5LevelO7warningyA2CmF">warning</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If any warning needs to print</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">warning</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6UPLogs5LevelO5erroryA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6UPLogs5LevelO5erroryA2CmF">error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use only if we want to show breakable error, or blocker error</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SL1loiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&lt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SL1loiySbx_xtFZ"><(_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">&lt;</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Level</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Level</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/erbittuu/UPLogs" target="_blank" rel="external">erbittuu</a>. All rights reserved. (Last updated: 2020-08-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

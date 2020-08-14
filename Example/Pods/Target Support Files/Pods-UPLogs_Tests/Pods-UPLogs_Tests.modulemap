@@ -1,0 +1,6 @@
+framework module Pods_UPLogs_Tests {
+  umbrella header "Pods-UPLogs_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
